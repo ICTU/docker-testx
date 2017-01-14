@@ -17,3 +17,9 @@ It is possible to specify parameters as well. In this case the specifying to the
 ```
 docker run -v `pwd`:/work --rm testx/protractor conf.coffee --baseUrl=http://google.com
 ```
+
+By default the screen resolution is 1280x1024 with 24-bit color. This can be changed via the SCREEN_RES env var:
+
+```
+docker run -v `pwd`:/work --rm -e SCREEN_RES=1920x1080x24 testx/protractor
+```
