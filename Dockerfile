@@ -1,4 +1,4 @@
-FROM webnicer/protractor-headless
+FROM ictu/docker-protractor-headless
 
 RUN npm install -g coffee-script
 
